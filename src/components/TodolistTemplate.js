@@ -1,12 +1,15 @@
 import React from 'react';
 import './TodolistTemplate.css';
 
-const TodolistTemplate = ({form, children}) => {
+const TodolistTemplate = ({form, children, palette}) => {
     return(
         <main className = "todo-list-template">
             <div className = "title">
                 오늘 할 일
             </div>
+            <section className = "palette-wrapper">
+                {palette}
+            </section>
             <section className = "form-wrapper">
                 {form}
             </section>
